@@ -1,7 +1,8 @@
 .body {
   padding-left: 50px;
   padding-right: 90px;
-  max-width: 900px;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .backLink {

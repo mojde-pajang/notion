@@ -9,8 +9,10 @@
 
 .button {
   position: absolute;
-  bottom: 20px;
-  right: 90px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
   padding: 6px;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
@@ -20,6 +22,9 @@
   color: #6f6f6f;
   font-weight: bold;
   cursor: pointer;
+  margin: auto;
+  width: 180px;
+  height: 40px;
 }
 
 .cover:hover .button {
@@ -30,4 +35,8 @@
   width: 100%;
   max-height: 295px;
   object-fit: cover;
+}
+
+.hidden {
+  display: none;
 }
