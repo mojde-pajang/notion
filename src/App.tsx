@@ -1,7 +1,9 @@
+import { Page } from "./Page/Components";
+
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Page />
     </>
   );
 }
