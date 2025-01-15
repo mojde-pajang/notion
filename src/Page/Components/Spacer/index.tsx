@@ -1,7 +1,16 @@
-type SpacerProps = {};
+import styles from "./styles.module.css";
 
-function Spacer({}: SpacerProps) {
-  return <div>Spacer</div>;
+type SpacerProps = {
+  showHint: boolean;
+  handleClick(): void;
+};
+
+function Spacer({ showHint, handleClick }: SpacerProps) {
+  return (
+    <div className={styles.spacer} onClick={handleClick}>
+      {showHint && <p>Click to edit first paragraph</p>}
+    </div>
+  );
 }
 
 export default Spacer;
