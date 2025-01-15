@@ -1,7 +1,9 @@
-export type NodeType = "text";
+export type NodeType = "text" | "tile" | "image" | "heading 1" | "heading 2";
 
 export type NodeData = {
   id: string;
+  type: NodeType;
+  value: string;
 };
 
 export type PageType = {
