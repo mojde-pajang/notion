@@ -61,7 +61,7 @@ function BasicNode({
       addNode({ type: node.type, id: nanoid(), value: "" }, index + 1);
       updateFocusedIndex(index + 1);
     }
-    if (event.key === "BackSpace") {
+    if (event.key === "Backspace") {
       if (target.textContent?.length === 0) {
         event.preventDefault();
         removeNodeByIndex(index);
