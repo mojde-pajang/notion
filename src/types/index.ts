@@ -1,4 +1,10 @@
-export type NodeType = "text" | "tile" | "image" | "heading 1" | "heading 2";
+export type NodeType =
+  | "text"
+  | "title"
+  | "image"
+  | "heading 1"
+  | "heading 2"
+  | "heading 3";
 
 export type NodeData = {
   id: string;

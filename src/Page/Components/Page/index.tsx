@@ -2,8 +2,8 @@ import { Cover, Spacer, Title } from "..";
 import styles from "./styles.module.css";
 import { nanoid } from "nanoid";
 import useFocusedNodeIndex from "../../../hooks/useFocusedNodeIndex";
-import BasicNode from "../../../Nodes/BasicNode";
 import { useAppState } from "../../../store/AppStateContext";
+import NodeTypeSwitcher from "../../../Nodes/NodeTypeSwitcher";
 
 type PageProps = {};
 
@@ -23,7 +23,7 @@ function Page({}: PageProps) {
         <Title title={title} changePageTitle={setTitle} addNode={addNode} />
       </div>
       {nodes.map((node, index) => (
-        <BasicNode
+        <NodeTypeSwitcher
           key={node.id}
           updateFocusedIndex={setFocusedNodeIndex}
           index={index}
