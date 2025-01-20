@@ -8,4 +8,8 @@ export type NodeData = {
 
 export type PageType = {
   id: string;
+  slug: string;
+  title: string;
+  nodes: NodeData[];
+  cover: string;
 };

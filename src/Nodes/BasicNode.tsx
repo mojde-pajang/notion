@@ -7,14 +7,12 @@ import {
   useEffect,
   useRef,
 } from "react";
+import { useAppState } from "../store/AppStateContext";
 type BasicNodeProps = {
   node: NodeData;
   updateFocusedIndex(index: number): void;
   isFocused: boolean;
   index: number;
-  addNode(node: NodeData, index: number): void;
-  removeNodeByIndex(index: number): void;
-  changeNodeValue(index: number, value: string): void;
 };
 
 function BasicNode({
@@ -22,11 +20,9 @@ function BasicNode({
   updateFocusedIndex,
   isFocused,
   index,
-  addNode,
-  removeNodeByIndex,
-  changeNodeValue,
 }: BasicNodeProps) {
   const nodeRef = useRef<HTMLDivElement>(null);
+  const { addNode, removeNodeByIndex, changeNodeValue } = useAppState();
 
   useEffect(() => {
     if (isFocused) {
