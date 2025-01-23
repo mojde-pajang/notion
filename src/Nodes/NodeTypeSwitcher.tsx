@@ -17,9 +17,10 @@ function NodeTypeSwitcher({
   const TEXT_NODES: NodeType[] = [
     "text",
     "title",
-    "heading 1",
-    "heading 2",
-    "heading 3",
+    "list",
+    "heading1",
+    "heading2",
+    "heading3",
   ];
 
   if (TEXT_NODES.includes(node.type)) {
