@@ -1,4 +1,4 @@
-import { NodeData, NodeType } from "../types";
+import { NodeData, NodeType } from "../../types";
 import BasicNode from "./BasicNode";
 
 type NodeTypeSwitcherProps = {

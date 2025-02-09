@@ -1,14 +1,14 @@
 import { Cover, Spacer, Title } from "..";
 import styles from "./styles.module.css";
 import { nanoid } from "nanoid";
-import useFocusedNodeIndex from "../../../hooks/useFocusedNodeIndex";
-import { useAppState } from "../../../store/AppStateContext";
-import NodeContainer from "../../../Nodes/NodeContainer";
 import { DndContext, closestCenter, DragEndEvent } from "@dnd-kit/core";
 import {
   SortableContext,
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
+import { useAppState } from "../../../store/AppStateContext";
+import useFocusedNodeIndex from "../../../hooks/useFocusedNodeIndex";
+import NodeContainer from "../../Nodes/NodeContainer";
 
 type PageProps = {};
 

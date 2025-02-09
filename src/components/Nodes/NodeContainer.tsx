@@ -1,8 +1,8 @@
-import { NodeData } from "../types";
 import NodeTypeSwitcher from "./NodeTypeSwitcher";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import styles from "./NodeContainer.module.css";
+import { NodeData } from "../../types";
 
 type NodeContainerProps = {
   node: NodeData;

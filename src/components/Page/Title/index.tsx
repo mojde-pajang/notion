@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
-import { NodeData } from "../../../types";
 import { nanoid } from "nanoid";
 import styles from "./styles.module.css";
+import { NodeData } from "../../../types";
 
 type TitleProps = {
   title: string;

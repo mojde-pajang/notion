@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
-import { Page } from "./Page/Components";
 import { AppStateProvider } from "./store/AppStateContext";
 import { Routes, Route } from "react-router-dom";
+import { Page } from "./components/Page";
 
 function App() {
   const createPage = () => {

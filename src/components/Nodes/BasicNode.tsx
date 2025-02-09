@@ -1,5 +1,4 @@
 import { nanoid } from "nanoid";
-import { NodeData, NodeType } from "../types";
 import classNames from "classnames";
 import {
   FormEventHandler,
@@ -8,9 +7,10 @@ import {
   useEffect,
   useRef,
 } from "react";
-import { useAppState } from "../store/AppStateContext";
 import CommandPanel from "./CommandPanel";
 import styles from "./BasicNode.module.css";
+import { NodeData, NodeType } from "../../types";
+import { useAppState } from "../../store/AppStateContext";
 
 type BasicNodeProps = {
   node: NodeData;

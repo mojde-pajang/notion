@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { NodeType } from "../types";
 import classNames from "classnames";
 import styles from "./commandPanel.module.css";
-import useOverflowScreenBottom from "../hooks/useOverflowScreenBottom";
+import { NodeType } from "../../types";
+import useOverflowScreenBottom from "../../hooks/useOverflowScreenBottom";
 
 type CommandPanelProps = {
   selectItem: (elementType: NodeType) => void;
